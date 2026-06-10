@@ -1,0 +1,72 @@
+.nearby-card-popover {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  transform: translateY(-100%);
+  width: max-content;
+  max-width: 240px;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(2, 6, 23, 0.18);
+  padding: 12px;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.nearby-card-popover--visible {
+  opacity: 1;
+  transform: translateY(-110%);
+}
+
+.nearby-card-popover__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nearby-card-popover__thumb {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.nearby-card-popover__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.nearby-card-popover__meta {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.35;
+}
+
+.nearby-card-popover__price {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nearby-card-popover__price strong {
+  color: #15803d;
+  font-size: 18px;
+}
+
+.nearby-card-popover__pill {
+  font-size: 12px;
+  font-weight: 800;
+  color: #0f172a;
+  background: rgba(21, 128, 61, 0.12);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
